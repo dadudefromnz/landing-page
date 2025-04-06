@@ -1,0 +1,456 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+* {box-sizing:border-box}
+body{
+    width: 100%;
+    /* background: #888d73;  */
+    background: #CDCDCD;
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#Wrapper{
+    width: 100vw;
+    box-sizing:border-box;
+    margin: 0px;
+    overflow: hidden;
+}
+div.header-wrapper{
+    background: #000000;
+    display: grid;
+    margin: 0px;
+    width: 100vw;
+    height: 8vh;
+    overflow: hidden;
+}
+div.logo h1{
+    display:none;
+    margin: 0;
+    height: 0;
+}
+div.logo img{
+    height: 80%;
+    margin-left: 10%;
+}
+div.header-wrapper nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 6px; 
+        align-content: center;
+        justify-content: end; 
+        padding-right: 5em;
+        column-gap: 2em;
+        height: inherit;
+}
+div.header-wrapper nav a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 1s;
+}
+div.header-wrapper nav a:hover{
+    color: #a8a8a8;
+    text-decoration: underline;
+}
+div.hero-wrapper{
+    position: relative;
+    width: 100vw;  
+    height: 55vh;
+    margin: 0;
+    background: #888d73;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.hero-wrapper img{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: -50px;
+    object-fit: contain;
+    min-width: 100%; 
+    margin-bottom: 10px;
+}
+div.hero-wrapper div.cta {
+    position:relative;
+    top: -8em;
+    left: 45%;
+    z-index: 1;
+    font-size: 1.4em;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+div.hero-wrapper div.logo{
+    position:relative;
+    top: 4em;
+    left: 5%;
+    z-index: 2;
+    font-size: 1.4em;
+    width: 430px;
+    height: 200px;
+}
+ div.hero-wrapper div.logo img{
+    width: 100%;
+    border: whitesmoke 2px solid;
+    padding: 4px;
+    background: #000000a7;
+    object-fit: contain;
+} 
+div.hero-card {
+    width: 35em;
+    height: 10em;
+    padding: 10px;
+    text-align: center;
+}
+div.hero-card button{
+    background: #0d8a1e;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    box-shadow: 1px 5px 5px #414141;
+    transition: 0.5s;
+}
+div.hero-card button a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+img.mobile-hero-image {
+    display: none;
+}
+div.hero-card button:hover{
+    background:#0a6716;
+}
+div.hero-wrapper div.cta h1{
+    color: #000000;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5em;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+div.hero-wrapper div.cta p{
+    color: rgb(255, 255, 255);
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 600;
+}
+div.title-div{
+    background: #888d73;
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    height: 8em;
+}
+div.title-div h1{
+    padding-top: 40px;
+    margin: 0;
+}
+div.title-div hr{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+div.grid-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: #CDCDCD;
+}
+div.grid-container > div.image{
+    background: #CDCDCD;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.grid-container > div.image img{
+    float: left;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+div.grid-container-two{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: #CDCDCD;
+}
+div.grid-container-two > div.image{
+    background: #CDCDCD;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.grid-container-two > div.image img{
+    float: left;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+div.grid-container-two > div.text{
+    background: #CDCDCD;
+    color: rgb(49, 49, 49);
+    text-align: left;
+    padding: 20px;
+}
+div.grid-container > div.text{
+    background: #CDCDCD;
+    color: rgb(49, 49, 49);
+    text-align: left;
+    padding: 20px;
+}
+div.grid-container > div.text a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: 1s;
+    text-shadow: 1px 1px 1px #000000;
+}
+div.grid-container > div.text a:hover{
+    color: #636363;
+}
+div.content-wrapper{
+    width: 80%; 
+    margin: 0px auto;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 20px;
+  padding: 0px;
+}
+.mySlides1, .mySlides2 {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  background: #0000006b;
+  top: 50%;
+  width: auto;
+  margin-top: 0px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.textslides {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+footer{
+    text-align: center;
+    background: #414141;
+    color: white;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1260px) {
+    div.hero-wrapper div.cta {
+        left: 38%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    div.hero-wrapper div.cta h1{
+        font-size: 1.7em;
+        color: rgb(0, 0, 0);
+        
+    }
+    div.content-wrapper{
+        width: 100%; 
+        margin: 0px auto;
+    }
+    div.hero-wrapper div.logo{
+        position:relative;
+        top: 3em;
+        left: 22%;
+        z-index: 2;
+        font-size: 1.4em;
+        width: 430px;
+        height: 200px;
+    }
+    div.hero-wrapper div.cta {
+        position:relative;
+        top: -1.5em;
+        left: 15%;
+        z-index: 1;
+        font-size: 1.2em;
+        
+    }
+    div.grid-container{
+    display: grid;
+    grid-template-columns: 70%;
+    background: #CDCDCD;
+    justify-content: center;
+}
+div.grid-container .slideshow-container{
+    order: 2;
+}
+div.grid-container .text{
+    order: 1;
+}
+div.grid-container .image{
+    order: 2;
+}
+div.grid-container-two{
+    grid-template-columns: 70%;
+    justify-content: center;
+}
+div.grid-container-two .slideshow-container{
+    order: 2;
+}
+div.grid-container-two .text{
+    order: 1;
+}
+}
+@media only screen and (max-width: 700px) {
+    .title-div h1{
+        font-size: 1.2em;
+    }
+    div.hero-wrapper div.cta {
+        left: -10%;
+        z-index: 1;
+        font-size: 1.4em;
+        
+    }
+    div.hero-wrapper div.logo{
+        position:relative;
+        top: 3em;
+        left: 10%;
+        z-index: 2;
+        font-size: 1.4em;
+        width: 400px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    div.hero-wrapper div.logo{
+        top: 1.8em;
+        left: 15%;
+        width: 330px;
+        height: 100px;
+    }
+    div.header-wrapper{
+        display: block;
+        margin: 0px;
+        width: 100vw;
+        height: 20vh;
+    }
+    div.header-wrapper nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center; 
+        padding: 0;
+        row-gap: 0.5em;
+        height: inherit;
+}
+div.hero-wrapper img{
+    position: absolute;
+    top: 0;
+}
+div.hero-wrapper div.cta {
+    left: -20%;
+    z-index: 1;
+    font-size: 1.4em;
+    top: .2em;
+    
+}
+div.hero-wrapper div.cta h1{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    
+}
+}
+@media only screen and (max-width: 460px){
+    div.hero-wrapper div.logo{
+        top: 1.8em;
+        left: 10%;
+        width: 280px;
+        height: 100px;
+    }
+    div.hero-wrapper div.cta h1{
+        font-size: 1.3em;
+        color: rgb(0, 0, 0);
+        
+    }
+    div.hero-wrapper div.cta {
+        left: -40%;
+        z-index: 1;
+        font-size: 1.4em;
+        top: 1.8em;
+        
+    }
+    img.desktop-hero-image{
+        display: none;
+    }
+    img.mobile-hero-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        min-width: 100%; 
+    }
+}
+@media only screen and (max-width: 420px) {
+    div.hero-wrapper div.cta {
+        left: -35%;
+        z-index: 1;
+        font-size: 1.2em;
+        top: 1.8em;
+        
+    }
+}
+@media only screen and (max-width: 390px) {
+    div.hero-wrapper div.cta {
+        left: -40%;
+        z-index: 1;
+        font-size: 1.2em;
+        top: 1.8em;
+        
+    }
+    div.hero-wrapper div.logo{
+        left: 10%;
+        width: 260px;
+        height: 90px;
+    }
+}
