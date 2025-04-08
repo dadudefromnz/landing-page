@@ -14,7 +14,6 @@
 * {box-sizing:border-box}
 body{
     width: 100%;
-    /* background: #888d73;  */
     background: #CDCDCD;
     margin: 0px;
     font-family: Verdana, Geneva, sans-serif;
@@ -83,16 +82,6 @@ div.hero-wrapper{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/* div.hero-wrapper picture{
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    position: absolute;
-    top: -50px;
-    object-fit: contain;
-    min-width: 100%; 
-    margin-bottom: 10px;
-} */
 div.hero-wrapper div.cta {
     position:relative;
     top: -8em;
@@ -143,7 +132,7 @@ div.hero-wrapper div.cta h1{
     color: #000000;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.5em;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     
@@ -162,7 +151,7 @@ div.title-div{
     text-align: center;
     color: whitesmoke;
     height: 8em;
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -178,7 +167,7 @@ div.grid-container{
     display: grid;
     grid-template-columns: 40% 60%;
     background: #CDCDCD;
-    animation: fadeInAnimation ease 6s;
+    animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -409,10 +398,6 @@ div.grid-container-two .text{
         padding: 0;
         row-gap: 0.5em;
         height: inherit;
-}
-div.hero-wrapper img{
-    position: absolute;
-    top: 0;
 }
 div.hero-wrapper div.cta {
     left: -20%;
