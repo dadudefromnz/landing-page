@@ -71,11 +71,11 @@ div.header-wrapper nav a.active{
 div.hero-wrapper{
     position: relative;
     width: 100vw;  
-    height: 55vh;
+    height: 500px;
     margin: 0;
     background: #888d73;
     background-image: url("../images/HeroImage.png");
-    object-fit: contain;
+    background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
     animation: fadeInAnimation ease 2s;
@@ -302,7 +302,6 @@ footer{
     }
     div.hero-wrapper{
         background-image: url("../images/HeroImage1200.png");
-        object-fit: contain;
     }
     div.hero-wrapper div.logo{
         position:relative;
@@ -350,7 +349,6 @@ div.grid-container-two .text{
 @media only screen and (max-width: 900px) {
     div.hero-wrapper{
         background-image: url("../images/HeroImage900.png");
-        object-fit: contain;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -365,7 +363,6 @@ div.grid-container-two .text{
     }
     div.hero-wrapper{
         background-image: url("../images/HeroImage700.png");
-        object-fit: contain;
         height: 389px;
     }    
     div.hero-wrapper div.logo{
