@@ -32,6 +32,9 @@ div.header-wrapper{
     width: 100vw;
     height: 8vh;
     overflow: hidden;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 div.logo h1{
     display:none;
@@ -63,16 +66,24 @@ div.header-wrapper nav a:hover{
     color: #a8a8a8;
     text-decoration: underline;
 }
+div.header-wrapper nav a.active{
+    text-decoration: underline;
+}
 div.hero-wrapper{
     position: relative;
     width: 100vw;  
     height: 55vh;
     margin: 0;
     background: #888d73;
+    background-image: url("../images/HeroImage.png");
+    object-fit: contain;
     box-sizing: border-box;
     overflow: hidden;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-div.hero-wrapper img{
+/* div.hero-wrapper picture{
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -81,16 +92,13 @@ div.hero-wrapper img{
     object-fit: contain;
     min-width: 100%; 
     margin-bottom: 10px;
-}
+} */
 div.hero-wrapper div.cta {
     position:relative;
     top: -8em;
     left: 45%;
     z-index: 1;
     font-size: 1.4em;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
     
 }
 div.hero-wrapper div.logo{
@@ -128,9 +136,6 @@ div.hero-card button a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-img.mobile-hero-image {
-    display: none;
-}
 div.hero-card button:hover{
     background:#0a6716;
 }
@@ -157,6 +162,9 @@ div.title-div{
     text-align: center;
     color: whitesmoke;
     height: 8em;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 div.title-div h1{
     padding-top: 40px;
@@ -170,6 +178,9 @@ div.grid-container{
     display: grid;
     grid-template-columns: 40% 60%;
     background: #CDCDCD;
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 div.grid-container > div.image{
     background: #CDCDCD;
@@ -300,14 +311,18 @@ footer{
         width: 100%; 
         margin: 0px auto;
     }
+    div.hero-wrapper{
+        background-image: url("../images/HeroImage1200.png");
+        object-fit: contain;
+    }
     div.hero-wrapper div.logo{
         position:relative;
-        top: 3em;
+        top: 1em;
         left: 22%;
         z-index: 2;
         font-size: 1.4em;
-        width: 430px;
-        height: 200px;
+        width: 400px;
+        height: 180px;
     }
     div.hero-wrapper div.cta {
         position:relative;
@@ -343,6 +358,12 @@ div.grid-container-two .text{
     order: 1;
 }
 }
+@media only screen and (max-width: 900px) {
+    div.hero-wrapper{
+        background-image: url("../images/HeroImage900.png");
+        object-fit: contain;
+    }
+}
 @media only screen and (max-width: 700px) {
     .title-div h1{
         font-size: 1.2em;
@@ -353,13 +374,18 @@ div.grid-container-two .text{
         font-size: 1.4em;
         
     }
+    div.hero-wrapper{
+        background-image: url("../images/HeroImage700.png");
+        object-fit: contain;
+        height: 389px;
+    }    
     div.hero-wrapper div.logo{
         position:relative;
-        top: 3em;
+        top: 1em;
         left: 10%;
         z-index: 2;
         font-size: 1.4em;
-        width: 400px;
+        width: 380px;
         height: 150px;
     }
 }
@@ -401,7 +427,7 @@ div.hero-wrapper div.cta h1{
     
 }
 }
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 480px){
     div.hero-wrapper div.logo{
         top: 1.8em;
         left: 10%;
@@ -420,15 +446,9 @@ div.hero-wrapper div.cta h1{
         top: 1.8em;
         
     }
-    img.desktop-hero-image{
-        display: none;
-    }
-    img.mobile-hero-image {
-        display: block;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        min-width: 100%; 
+    div.hero-wrapper{
+        background-image: url("../images/mobileHero.png");
+        object-fit: contain;
     }
 }
 @media only screen and (max-width: 420px) {
