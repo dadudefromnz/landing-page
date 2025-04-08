@@ -74,7 +74,7 @@ div.hero-wrapper{
     height: 500px;
     margin: 0;
     background: #888d73;
-    background-image: url("../images/HeroImage.png");
+    background-image: url("../images/HeroImage.webp");
     background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
@@ -301,7 +301,7 @@ footer{
         margin: 0px auto;
     }
     div.hero-wrapper{
-        background-image: url("../images/HeroImage1200.png");
+        background-image: url("../images/HeroImage1200.webp");
     }
     div.hero-wrapper div.logo{
         position:relative;
@@ -348,7 +348,7 @@ div.grid-container-two .text{
 }
 @media only screen and (max-width: 900px) {
     div.hero-wrapper{
-        background-image: url("../images/HeroImage900.png");
+        background-image: url("../images/HeroImage900.webp");
     }
 }
 @media only screen and (max-width: 700px) {
@@ -362,7 +362,7 @@ div.grid-container-two .text{
         
     }
     div.hero-wrapper{
-        background-image: url("../images/HeroImage700.png");
+        background-image: url("../images/HeroImage700.webp");
         height: 389px;
     }    
     div.hero-wrapper div.logo{
@@ -399,7 +399,7 @@ div.grid-container-two .text{
 div.hero-wrapper div.cta {
     left: -20%;
     z-index: 1;
-    font-size: 1.4em;
+    font-size: 1.2em;
     top: .2em;
     
 }
@@ -424,12 +424,12 @@ div.hero-wrapper div.cta h1{
     div.hero-wrapper div.cta {
         left: -40%;
         z-index: 1;
-        font-size: 1.4em;
-        top: 1.8em;
+        font-size: 1.2em;
+        top: 0.5em;
         
     }
     div.hero-wrapper{
-        background-image: url("../images/mobileHero.png");
+        background-image: url("../images/mobileHero.webp");
         height: 320px;
     }
 }
@@ -438,7 +438,7 @@ div.hero-wrapper div.cta h1{
         left: -35%;
         z-index: 1;
         font-size: 1.2em;
-        top: 1.8em;
+        top: 0.5em;
         
     }
 }
@@ -447,7 +447,7 @@ div.hero-wrapper div.cta h1{
         left: -40%;
         z-index: 1;
         font-size: 1.2em;
-        top: 1.8em;
+        top: 0.5em;
         
     }
     div.hero-wrapper div.logo{
